@@ -1,3 +1,3 @@
 - A website devoted to a variety of interests.
 - Built utilizing HTML, CSS & Javascript. 
-
+- The live preview of the site can be found here: https://jedack-top.github.io/Disparate-Disciplines/
