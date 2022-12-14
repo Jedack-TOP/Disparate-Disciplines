@@ -1,0 +1,91 @@
+<!DOCTYPE html []>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="MarkdownViewer++" />
+    <title>Understanding the Digital World.md</title>
+    <link rel="stylesheet" href="/Books/books.css">
+            
+
+
+  </head>
+  <body>
+    <p>Authored by [[Brian Kernighan]]</p>
+    <h2 id="chapter-1">Chapter 1</h2>
+    <h2 id="chapter-2">Chapter 2</h2>
+    <h2 id="chapter-3">Chapter 3</h2>
+    <h2 id="chapter-4.algorithms">Chapter 4. Algorithms</h2>
+    <h4 id="introduction">Introduction</h4>
+    <p>The Feynman Algorithm:</p>
+    <ol>
+      <li>Write down the problem.</li>
+      <li>Think real hard.</li>
+      <li>Write down the solution.
+Attributed to physicist Murray Gell-Mann, 1992.</li>
+    </ol>
+    <p>An algorithm is "a sequence of steps that is guaranteed to compute a result correctly." This is because it's unambiguous and stops after a finite amount of time.</p>
+    <h4 id="linear-algorithms">4.1 Linear Algorithms</h4>
+    <p>When the computation time is directly proportional to the amount of data, the algorithm is linear. Most often, there is some initialization at the start. And then a simple compuation is performed on each item in sequence.</p>
+    <h4 id="binary-search">4.2 Binary Search</h4>
+    <p>Binary search describes a methodology that cuts a database of numbers in half with each successive comparison. And the total number of comparisons is equal to the power of 2 that brings us to the original number. In other words, this also equals the log (in a base 2 system) of the original number. At the close of this section, Kernighan noted that this binary division appears in the single elimination tournament at Wimbledon which starts with 128 competitors. This works since $128 = 2^7$.</p>
+    <h4 id="sorting">4.3 Sorting</h4>
+    <p>A selection sort has a quadratic growth rate since it's roughly proportional to the square of the number of items being sorted. However, <em>Quicksort</em> was invented by [[Tony Hoare]] in 1959. It's a modified binary search where work done equals N x log N. That is clearly a marked improvement over the <span class="math">N^2</span> system.</p>
+    <h4 id="hard-problems-and-complexity">4.4 Hard Problems and Complexity</h4>
+    <p>Exponential algorithms (based on $2^N$) are necessitated where possibilities must be tried on a case by case basis. [[Understanding the Digital World#Chapter 13|Cryptography]] takes advantage of this computational infeasibility with higher N.
+"Easy prolbems" are "polynomial" in their complexity. These are called "P" problems since they can be solved in polynomial time. W hereas, "NP" ("nondeterministic polynomial") problems "have the property that we can’t find a solution quickly but we can verify quickly that a proposed solution is correct."
+[[Stephen Cook]] showed that many of these problems are equivalent.</p>
+    <h4 id="summary">4.5 Summary</h4>
+    <p>The study of algorithms and complexity is a major part of computer science. See chapters 8, 13, 11 &amp; 12 for further details.</p>
+    <h2 id="chapter-5">Chapter 5</h2>
+    <h4 id="introduction-1">Introduction</h4>
+    <p>“The realization came over me with full force that a good part of the remainder of my life was going to be spent in finding errors in my own programs.” [[Maurice Wilkes]], Memoirs of a Computer Pioneer, 1985.</p>
+    <p>If an algorithm can be thought of as an idealized set of instructions, then a program can be viewed as a more practical expression that a computer can directly process.</p>
+    <h4 id="assembly-language">5.1 Assembly Language</h4>
+    <p>An assembler is "a program that translates instructions in the processor’s repertoire into bits for loading directly into the memory of a computer; assembly language is the corresponding level of programming language."
+An assembly language for a particular processor architecture is specific to that architecture. The two manufacturers that lead the market presently are Intel and Advanced Micro Devices.</p>
+    <h4 id="high-level-languages">5.2 High-Level Languages</h4>
+    <p>These are independent of any particular processor architecture. Code written in these languages are converted by a compiler into instructions in the assembly lan guage. These are then transformed into a sequence of bits that loaded and executed.
+Interestingly, compilers themselves are oft divided into both a "front end" and several "back ends".
+Two advantages of high-level languages over assembly languages are as follows:</p>
+    <ol>
+      <li>They're written in a more natural intuitive form; so they're easier to learn.</li>
+      <li>The architecture-generic nature of these languages means that development costs can be amortized over multiple computer types.
+The remainder of this section is dedicated to a presentation of a simple program across six programming languages. These are as follows:</li>
+      <li>Insert png images into HTML file and use dialog boxes. Derived from "Formula Translation", Frotran was developed by an IBM team led by John Backus, and was very successful for expressing computations in science and engineering. Fortran is alive and well today; it has gone through several evolutionary stages since 1958, but is recognizably the same language. Backus received the Turing Award in 1977 in part for his work on Fortran.</li>
+      <li>A second major high-level language of the late 1950s was COBOL (Common Business Oriented Language), which was strongly influenced by the work of [[Grace Hopper]] on high-level alternatives to assembly language. COBOL was specifically aimed at business data processing, with language features to make it easy to express the kinds of data structures and computations that go into managing inventories, preparing invoices, computing payrolls, and the like. In 2020, the state of New Jersey discovered that their ancient programs for processing unemployment claims couldn’t cope with the increased volume caused by Covid-19, but the state couldn’t find enough experienced programmers to upgrade the COBOL programs.
+(Fortran, COBOL and others focused on specific application areas. During the 1970s, languages were created that were intended for “system programming,” that is, for writing programmer tools like assemblers, compilers, text editors, and even operating systems.)</li>
+      <li>The most successful of these latter languages was C.
+"C was developed by Bell Labs by Dennis Ritchie in 1973 and still quite popular and widely used."</li>
+    </ol>
+    <h4 id="software-development">5.3 Software Development</h4>
+    <h5 id="libraries-interfaces-and-development-kits">5.3.1 Libraries, Interfaces, and development kits</h5>
+    <h5 id="bugs">5.3.2 Bugs</h5>
+    <h4 id="intellectual-property">5.4 Intellectual Property</h4>
+    <h5 id="trade-secret">5.4.1 Trade Secret</h5>
+    <h5 id="trademark">5.4.2 Trademark</h5>
+    <h5 id="copyright">5.4.3 Copyright</h5>
+    <h5 id="patent">5.4.4 Patent</h5>
+    <h5 id="licenses">5.4.5 Licenses</h5>
+    <h4 id="standards">5.5 Standards</h4>
+    <h4 id="open-source-software">5.6 Open Source Software</h4>
+    <h4 id="summary-1">5.7 Summary</h4>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.1.1/tocbot.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.1.1/tocbot.min.js"></script>
+      
+    <script>
+      tocbot.init({
+  // Where to render the table of contents.
+  tocSelector: '.js-toc',
+  // Where to grab the headings to build the table of contents.
+  contentSelector: '.js-toc-content',
+  // Which headings to grab inside of the contentSelector element.
+  headingSelector: 'h1, h2, h3',
+  // For headings inside relative or absolute positioned containers within content.
+  hasInnerContainers: true,
+});
+    </script>
+
+  
+  </body>
+</html>

@@ -11,7 +11,7 @@ body {
 /* HEADER SECTION */
 header {
     background-color: #1f2937;
-    padding: 1em 13em;
+    padding: 1em 5em;
 }
 
 /* NAVIGATION SECTION */
@@ -36,7 +36,7 @@ header {
 a, a:active, a:visited { color: white; }
 a:hover { color: green; }
 
-p, p:active, p:visited {color: white;} 
+p, p:active, p:visited {color: purple;} 
 p:hover { color: green; }
 
 /* Dropdown styling */
