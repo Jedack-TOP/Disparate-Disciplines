@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 * {
     margin: 0;
@@ -36,8 +37,27 @@ header {
 a, a:active, a:visited { color: white; }
 a:hover { color: green; }
 
-p, p:active, p:visited {color: purple;} 
-p:hover { color: green; }
+p, p:active, p:visited {color: black;} 
+
+/* Background */
+.background {
+  padding: 7em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.welcome .left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.welcome .right {
+  flex-shrink: 0;
+  width: 50%;
+}
 
 /* Dropdown styling */
 .dropbtn {
@@ -77,3 +97,15 @@ p:hover { color: green; }
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
 }
+
+/* FOOTER */
+/*
+footer {
+  background-color: #1f2937;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0;
+}
+*/
