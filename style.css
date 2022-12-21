@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: rgb(227,206,185)
 }
 
 /* HEADER SECTION */
@@ -39,22 +40,30 @@ a:hover { color: green; }
 
 p, p:active, p:visited {color: black;} 
 
+.Title {
+padding: 3em 0;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 23px;
+}
+
 /* Background */
 .background {
-  padding: 7em 0;
+  padding: 2em 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2em;
+  gap: 8em;
 }
 
-.welcome .left {
+.background .left {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
 }
 
-.welcome .right {
+.background .right {
   flex-shrink: 0;
   width: 50%;
 }
@@ -98,8 +107,42 @@ p, p:active, p:visited {color: black;}
   background-color: #3e8e41;
 }
 
+/* Dialog Pop-up */
+#openBtn, #closeBtn {
+	border: none;
+	background-color: hsl(0, 0%, 20%);
+	color: #fff;
+	border-radius: 3px;
+	width: 200px;
+	height: 40px;
+	font-size: 1rem;
+	font-family: sans-serif;
+	cursor: pointer;
+}
+
+
+#closeBtn {
+	width: 80px;
+	height: 30px;
+	font-size: 0.9rem;
+	margin-bottom: 30px;
+}
+
+#openBtn:hover, #openBtn:focus,
+#closeBtn:hover, #closeBtn:focus{
+	background-color: hsl(0, 56%, 30%);
+}
+
+dialog {
+	width: 80%;
+	height: 80%;
+	position: relative;
+	top: 30px;
+	font-family: sans-serif;
+	color: #555;
+}
+
 /* FOOTER */
-/*
 footer {
   background-color: #1f2937;
   color: #FFF;
@@ -107,5 +150,5 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 2em 0;
+  margin-top: 475px;
 }
-*/
