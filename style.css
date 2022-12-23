@@ -41,7 +41,7 @@ a:hover { color: green; }
 p, p:active, p:visited {color: black;} 
 
 .Title {
-padding: 3em 0;
+padding: 2em 0;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -50,11 +50,11 @@ font-size: 23px;
 
 /* Background */
 .background {
-  padding: 2em 0;
+  padding: 2em 15em;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8em;
+  gap: 3em;
 }
 
 .background .left {
@@ -113,8 +113,8 @@ font-size: 23px;
 	background-color: hsl(0, 0%, 20%);
 	color: #fff;
 	border-radius: 3px;
-	width: 200px;
-	height: 40px;
+	width: 100px;
+	height: 20px;
 	font-size: 1rem;
 	font-family: sans-serif;
 	cursor: pointer;
@@ -122,8 +122,8 @@ font-size: 23px;
 
 
 #closeBtn {
-	width: 80px;
-	height: 30px;
+	width: 60px;
+	height: 20px;
 	font-size: 0.9rem;
 	margin-bottom: 30px;
 }
@@ -147,8 +147,12 @@ footer {
   background-color: #1f2937;
   color: #FFF;
   display: flex;
-  justify-content: center;
+  justify-content:space-around;
   align-items: center;
-  padding: 2em 0;
-  margin-top: 475px;
+  padding: 1em 0;
+  margin-top: 175px;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
 }
