@@ -38,6 +38,10 @@ header {
 a, a:active, a:visited { color: white; }
 a:hover { color: green; }
 
+/* Dialog Links */
+a.DialogLink { color: blue }
+a.DialogLink:hover { color: green; }
+
 p, p:active, p:visited {color: black;} 
 
 .Title {
@@ -46,6 +50,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 font-size: 23px;
+flex-wrap: wrap;
 }
 
 /* Background */
@@ -55,6 +60,7 @@ font-size: 23px;
   justify-content: center;
   align-items: center;
   gap: 3em;
+  flex-wrap: wrap;
 }
 
 .background .left {
@@ -66,6 +72,24 @@ font-size: 23px;
 .background .right {
   flex-shrink: 0;
   width: 50%;
+}
+
+@media(max-width: 800px){
+  .background .right {
+    width: 100%; 
+  }
+}
+
+img {
+  max-width: 550px;
+  height: auto;
+}
+
+@media(max-width: 800px){
+  img {
+    max-width: 250px;
+    height: auto;
+  }
 }
 
 /* Dropdown styling */
